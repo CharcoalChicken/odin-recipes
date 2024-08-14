@@ -1,18 +1,20 @@
-/* Removes margin and padding for the whole document */
+/***** STYLING FOR ALL PAGES *****/
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/* .......... */
 body {
     background-color: #faf0e6;
+    color: #1f1e1d;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    text-decoration: underline;
+}
 
-/* .......... */
 h1, h2 {
-    color: #1f1e1d;
     text-align: center;
     margin: 50px;
 }
@@ -20,7 +22,6 @@ h1, h2 {
 
 /***** INDEX.HTML PAGE STYLING *****/
 
-/* styling for the two main images in the index.html */
 .index-image {
     display: flex;
     justify-content: center;
@@ -32,19 +33,19 @@ h1, h2 {
     height: auto;
 }
 
-/* Styling for the list and its images in the index.html */
-.index-page-list {
+.index-page ul {
     text-align: center;
     font-weight: bold;
 }
 
-.index-page-list ul li {
+.index-page ul li {
     list-style-type: none;
     display: inline-flex;
-    margin: 50px;
+    margin: 50px 80px;
+    background-color: #ffc0cb;
 }
 
-.index-page-list ul li a {
+.index-page ul li a {
     width: 200px;
     height: 20px;
     padding: 10px; 
@@ -52,14 +53,60 @@ h1, h2 {
     color: #faf0e6;
     border: 5px solid black;
     background-color: #ffc0cb;
+}
+
+.index-page ul li a:hover {
+        background-color: #d87093;
 
 }
 
-.index-page-list ul li a:hover {
+/***** CHICKEN-BURGER.HTML, CHOCOLATE-CHIP-COOKIES.HTML & STRAWBERRY-SHORTCAKE.HTML PAGES STYLING *****/
+
+.recipes-pages {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    list-style-position: inside;
+}
+
+.recipes-pages h2 {
     background-color: #d87093;
 }
 
-/***** OTHER PAGES STYLING *****/
+.recipes-pages img {
+    width: 500px;
+    height: 500px;
+}  
 
+.recipes-pages ul, .recipes-pages ol {
+    text-align: left;
+    margin: 50px;
+}
 
- 
+.recipes-pages li {
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.recipes-pages a {
+    background-color: #ffc0cb;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 3px solid black;
+    text-decoration: none;
+    margin-top: 150px;
+}
+
+.recipes-pages a:hover {
+    background-color: #d87093;
+}
+
+/* Removes the border from the youtube video */
+iframe {
+    border: 0px;
+}
+
